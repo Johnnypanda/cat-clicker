@@ -1,35 +1,44 @@
 body {
 	line-height: 1.125rem;
-	background: #C9D6FF;  /* fallback for old browsers */
-	background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: url('/images/geometry.png');  /* fallback for old browsers */
+	font-family: 'Rubik', sans-serif;
+	color: #242625;
 
 	img {
 		width: 100%;
 		height: auto;
+		box-shadow: 0 3px 3px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
 	}
 
 	h1 {
 		text-align: center;
+		text-transform: uppercase;
+	}
+
+	p {
+		text-transform: uppercase;
 	}
 
 	ul {
 		list-style-type: none;
 		margin: 0 auto;
-		max-width: 400px;
+		max-width: 660px;
 		li {
 			display: inline-block;
 			padding: 10px;
+			margin: 5px 20px;
 			font-size: 25px;
 			cursor: pointer;
 			transition: all 0.3s ease;
-			border: 1px solid #333;
 			margin: 0;
+			background-color:#63ff7f;
+			color: #242625;
+			text-transform: uppercase;
 		}
 
 		li:hover {
 			color: #fff;
-			border: 1px solid #fff;
+			background-color: #60ffb2;
 		}
 	}
 
@@ -47,5 +56,10 @@ body {
 	.cat-wrap {
 		margin: 0 auto;
 		max-width: 500px;
+	}
+
+	.click-num {
+		color: #13f4ed;
+		font-size: 40px;
 	}
 }
